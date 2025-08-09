@@ -17,7 +17,7 @@ const sleep = ( seconds: number ):Promise<boolean> => {
 
 export const getProducts = async({ filterKey }:GetProductsOptions):Promise<Product[]> => {
   
-  await sleep(2);
+  // await sleep(2);
 
   const filterUrl = ( filterKey ) ? `category=${filterKey}` : '' 
 
@@ -43,7 +43,7 @@ export interface ProductLike {
   image:       string;
 }
 export const createProduct = async( product: ProductLike ) => {
-  await sleep(5);
+  await sleep(2);
 
   // throw new Error('Error creando un producto');
 

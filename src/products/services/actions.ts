@@ -43,7 +43,7 @@ export interface ProductLike {
   image:       string;
 }
 export const createProduct = async( product: ProductLike ) => {
-  await sleep(2);
+  await sleep(5);
 
   // throw new Error('Error creando un producto');
 
